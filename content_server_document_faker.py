@@ -13,7 +13,6 @@ class ContentServerDocumentFaker:
     def create_document(self, document_data: dict) -> str | None:
         """
         Creates a document in the backend using the provided data.
-        This method will be defined in more detail later.
 
         Args:
             document_data: A dictionary containing the document's metadata and content.
@@ -21,7 +20,6 @@ class ContentServerDocumentFaker:
         Returns:
             The document ID from the backend if creation is successful, otherwise None.
         """
-        # Die Logik zum Aufrufen der API wird später hier implementiert.
-        # Zum Beispiel:
-        # return self.api_client.create_document_in_system(document_data)
-        pass
+        # Ruft die API auf, um das Dokument im System zu erstellen
+        document_id = self.api_client.create_document_in_system(document_data)
+        return document_id
